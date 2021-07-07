@@ -1,4 +1,4 @@
-# Guess_the_Number | TECHISHANT
+# GuessTheNumber | TECHISHANT
 
 In this game you need to guess a number. I made this from python. In this it generates a random integer which is checked.
 
