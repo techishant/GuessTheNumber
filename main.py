@@ -2,7 +2,7 @@
 import random
 
 # Getting a Random Integer
-random_number=random.randint(0,101)
+random_number=random.randint(1,100)
 
 # "i" to check if the user finished the game or not ( 0=completing | 1=completed )
 i=0
@@ -10,8 +10,13 @@ i=0
 # To check how many tries a player took
 tries=1
 
+#to check number of hints
+number_of_hints = 1
+
 # Printing a intro statement 
 print("Guess a number between 1 to 100.")
+print("")
+print("Type '0' to grt a hint!")
 
 # ------------------------------------------------main logic starts
 
@@ -51,9 +56,17 @@ while(i < 1):
 
         # increaing the try number
         tries=tries+1
+        #checking if the hint is used or not and giving hint
+        if(ans == 0):
+            if number_of_hints == 1:
+               print("The hint is - The required number is between " + str(int(random_number)- random.randint(4,10))  + " and " + str(int(random_number)+ random.randint(4,10)))
+               number_of_hints + 1
+            else:
+              print("You have already used your hint!")
 
+             
         # if statement to show hint if the ans is low 
-        if(ans<random_number):
+        elif(ans<random_number):
             print("The number is low")
 
         # elif statement to show hint if the ans is high
