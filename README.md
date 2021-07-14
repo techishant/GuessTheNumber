@@ -14,6 +14,7 @@ It gives you hints `The number is high` and `The number is low` when the player 
  - First you need to type a a random number between 1 to 100.
  - Then if you get a `nailed on the first try` it means you completed the game on first try. Else,
  - Follow the hint and try to complete in less tries.
+ - Use '0' command to recieve a better hint you can use it only once.
  - If you completes the game it will show you a `Yeah you nailed it` caption.
  - Enjoy!!
 
