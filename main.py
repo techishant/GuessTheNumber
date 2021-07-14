@@ -2,7 +2,7 @@
 import random
 
 # Getting a Random Integer
-random_number=random.randint(0,101)
+random_number=random.randint(0,100)
 
 # "i" to check if the user finished the game or not ( 0=completing | 1=completed )
 i=0
